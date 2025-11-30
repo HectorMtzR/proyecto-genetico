@@ -1,0 +1,56 @@
+.tsp-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fafc;
+}
+
+.sidebar {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-right: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
+
+.canvas-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+canvas {
+  background: white;
+  border: 2px solid #94a3b8;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  cursor: crosshair;
+}
+
+/* Botones */
+.btn-group { display: flex; gap: 5px; }
+.btn-group button {
+  flex: 1; padding: 8px; border: 1px solid #ccc; background: #fff; cursor: pointer;
+}
+.btn-group button.active { background: #3b82f6; color: white; border-color: #3b82f6; }
+
+.btn-primary {
+  width: 100%; padding: 12px; font-weight: bold; color: white; border: none; border-radius: 6px; cursor: pointer;
+}
+.btn-primary.start { background-color: #16a34a; }
+.btn-primary.stop { background-color: #ef4444; }
+
+.btn-secondary {
+  width: 100%; padding: 8px; background: transparent; border: 1px solid #64748b; color: #64748b; border-radius: 6px; cursor: pointer;
+}
+
+.instructions {
+  margin-top: auto; color: #64748b; border-top: 1px solid #eee; padding-top: 10px;
+}
